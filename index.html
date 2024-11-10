@@ -140,6 +140,49 @@
                 opacity: 1;
             }
         }
+
+        /* Mobile-specific styles only */
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 40px);
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p,
+            li {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            /* Fix for list formatting on mobile */
+            ul,
+            ol {
+                padding-left: 20px;
+                margin: 0 0 15px 0;
+            }
+
+            /* Adjust header padding for mobile */
+            header {
+                padding: 60px 20px;
+            }
+
+            /* Adjust content margin for mobile */
+            .content {
+                margin: 30px 20px;
+            }
+        }
     </style>
 </head>
 
